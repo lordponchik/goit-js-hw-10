@@ -8,12 +8,7 @@ export default function fetchCountries(countriesName) {
       if (!response.ok) {
         throw new Error(response.status);
       }
-      return response.json;
+      return response.json();
     })
-    .then(data => {
-      console.log();
-    })
-    .catch(error => {
-      console.log(error);
-    });
+    .then(data => data);
 }
