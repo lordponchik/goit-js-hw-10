@@ -52,15 +52,15 @@ Sanitize the entered line using the `trim()` method, which will solve the proble
 
 If the back-end returns more than 10 countries, a notification appears in the interface saying that the name should be more specific. For notifications, use the [notiflix library](https://github.com/notiflix/Notiflix#readme) and display this line: `"Too many matches found. Please enter a more specific name."`.
 
-![Too many matches alert](./preview/too-many-matches.png)
+![Too many matches alert](https://raw.githubusercontent.com/goitacademy/javascript-homework/main/v2/10/preview/too-many-matches.png)
 
 If the back-end returns from 2 to 10 countries, a list of found countries is displayed under the text field. Each list item consists of a flag and country name.
 
-![Country list UI](./preview/country-list.png)
+![Country list UI](https://raw.githubusercontent.com/goitacademy/javascript-homework/main/v2/10/preview/country-list.png)
 
 If the request results in an array with one country, the interface displays the card markup with information about the country: flag, name, capital, population and languages.
 
-![Country info UI](./preview/country-info.png)
+![Country info UI](https://raw.githubusercontent.com/goitacademy/javascript-homework/main/v2/10/preview/country-info.png)
 
 > ⚠️ It is enough for the app to work for most countries. Some countries, such as `Sudan`, can be problematic because the name of the country is part of the name of another country, `South Sudan`. Do not worry about these exceptions.
 
@@ -68,7 +68,7 @@ If the request results in an array with one country, the interface displays the 
 
 If the user enters the name of a country that does not exist, the back-end will return not an empty array, but an error with the status code `404` - not found. If you do not handle this, the user will never know that the search has not returned any results. Add a notification, "Oops, there is no country with that name"`, in case of an error using the [notiflix library](https://github.com/notiflix/Notiflix#readme).
 
-![Error alert](./preview/error-alert.png)
+![Error alert](https://raw.githubusercontent.com/goitacademy/javascript-homework/main/v2/10/preview/error-alert.png)
 
 > ⚠️ Remember that `fetch` does not treat 404 as an error, so you need to explicitly reject the promise in order to catch and handle the error.
 </details>
